@@ -4,7 +4,7 @@ local combat = {}                                                               
 local frameDelay = 275                                                              -- Assigned the delay between steps to a variable to 
                                                                                     -- allow for better control.
                                                                                     
-local iceArea = {                                                                   -- This array contains each step in the animation
+local iceArea = {                                                                   -- This array contains each step in the animation.
     {
         {0, 0, 0, 0, 0, 0, 0,},
         {0, 0, 0, 0, 0, 0, 0,},
@@ -170,7 +170,7 @@ local iceArea = {                                                               
 }
 
 for i = 1, #iceArea do                                                              -- This for loop ensures that all instances of combat for
-    combat[i] = Combat()                                                            -- this spell use the correct spell effect/ animation
+    combat[i] = Combat()                                                            -- this spell use the correct spell effect/ animation.
     combat[i]:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICETORNADO)
 end
 
